@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios from 'axios';
 
 const API = axios.create({baseUrl: process.env.REACT_APP_BASEURL})
 
