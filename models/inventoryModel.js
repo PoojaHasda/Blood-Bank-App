@@ -15,6 +15,10 @@ const inventorySchema = new mongoose.Schema({
         type:Number,
         required:[true,'blood quantity is required']
     },
+    email:{
+        type:String,
+        required:[true,'Donar Email is required'],
+    },
     organisation:{
         type:mongoose.Schema.Types.ObjectId,
         ref:'users',
@@ -37,4 +41,4 @@ const inventorySchema = new mongoose.Schema({
 },{timestamps:true}
 )
 
-export const Inventory = mongoose.model("Inventory",inventorySchema)
+export const inventoryModel = mongoose.model("inventoryModel",inventorySchema)

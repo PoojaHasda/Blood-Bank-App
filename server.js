@@ -2,7 +2,7 @@ import express from 'express';
 import testRoutes from '../Blood Donation App/routes/testRoutes.js';
 import router from '../Blood Donation App/routes/authRoutes.js';
 import router1 from '../Blood Donation App/routes/inventoryRoutes.js';
-// import registerController from './controllers/authController.js';
+import router2 from './routes/analyticsRoutes.js';
 import 'dotenv/config'
 import colors from 'colors';
 import morgan from 'morgan';
@@ -24,6 +24,7 @@ app.use(morgan('dev'))
 app.use('/api/v1/test',testRoutes);
 app.use('/api/v1/auth',router);
 app.use('/api/v1/inventory',router1)
+app.use('/api/v1/analytics',router2)
 
 
 //port 

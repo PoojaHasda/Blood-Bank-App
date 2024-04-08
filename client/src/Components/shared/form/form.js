@@ -27,11 +27,11 @@ const Form = ({ formType, SubmitButton, FormTitle }) => {
               role,
               email,
               password,
-              phone,
               organisationName,
-              address,
               hospitalName,
-              website
+              website,
+              address,
+              phone
             );
           }
         }}
@@ -41,7 +41,7 @@ const Form = ({ formType, SubmitButton, FormTitle }) => {
         <hr />
 
         <div className="d-flex mb-3">
-          <div className="form-check">
+          <div className="form-check ms-2">
             <input
               type="radio"
               className="form-check-input"
@@ -149,7 +149,7 @@ const Form = ({ formType, SubmitButton, FormTitle }) => {
                   {role === "hospital" && (
                     <InputType
                       labeltext={"Hospital Name"}
-                      labelFor={"forhospitalName"}
+                      labelFor={"forhospital"}
                       inputtype={"text"}
                       name={"hospitalName"}
                       value={hospitalName}

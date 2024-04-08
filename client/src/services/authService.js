@@ -1,42 +1,46 @@
-import { userLogin, userRegister } from "../redux/features/auth/authAction.js";
-import store from "../redux/store.js";
-
+import { userLogin, userRegister } from "../redux/features/auth/authAction";
+import store from "../redux/store";
 
 export const handleLogin = (e, email, password, role) => {
-    e.preventDefault()
-    try {
-        if (!role || !email || !password) {
-            return alert('Please provide all fields')
-        }
-        store.dispatch(userLogin({email, password, role}))
-    } catch (error) {
-        console.log(error);
+  e.preventDefault();
+  try {
+    if (!role || !email || !password) {
+      return alert("Please Provide All Feilds");
     }
+    store.dispatch(userLogin({ email, password, role }));
+  } catch (error) {
+    console.log(error);
+  }
 };
 
-export const handleRegister = ( e,
+export const handleRegister = (
+    e,
     name,
     role,
     email,
     password,
-    phone,
     organisationName,
-    address,
     hospitalName,
-    website) => {
-        e.preventDefault()
-        try {
-          store.dispatch(userRegister( {
-            name,
-            role,
-            email,
-            password,
-            phone,
-            organisationName,
-            address,
-            hospitalName,
-            website}));
-        } catch (error) {
-            console.log(error);
-        }
+    website,
+    address,
+    phone  
+  ) => {
+    e.preventDefault();
+    try {
+      store.dispatch(
+        userRegister({
+          name,
+          role,
+          email,
+          password,
+          organisationName,
+          hospitalName,
+          website,
+          address,
+          phone 
+        })
+      );
+    } catch (error) {
+      console.log(error);
     }
+  };
