@@ -22,17 +22,16 @@ Blood Bank Management System is a software application designed to manage the wo
 
 1. **Clone the repository:**
 
-- ```bash
-git clone https://github.com/PoojaHasda/Blood-Bank-App.git
+- ```bash git clone https://github.com/PoojaHasda/Blood-Bank-App.git
 
 2. **Navigate to the project directory**
 cd blood-bank-management-system
 
 **Install all dependencies for both client and server:**
-cd client
+cd client <br>
 npm install
 
-cd ../server
+cd ../server<br>
 npm install
 
 
