@@ -1,5 +1,5 @@
 # Blood Bank App
-Blood Bank Management System is a software application designed to manage the workflow of a blood bank, including inventory management, donor management, hospital management, and blood transfusion management. This system helps in maintaining records efficiently and ensures timely availability of blood units as per requirement.
+Blood Bank App is a software application designed to manage the workflow of a blood bank, including inventory management, donor management, hospital management, and blood transfusion management. This system helps in maintaining records efficiently and ensures timely availability of blood units as per requirement.
 
 ## Features
 
