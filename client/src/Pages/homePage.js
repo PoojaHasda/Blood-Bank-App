@@ -8,7 +8,7 @@ import API from "../services/API";
 import moment from 'moment';
 
 const HomePage = () => {
-  const { loading, error } = useSelector((state) => state.auth);
+  const { loading, error,user } = useSelector((state) => state.auth);
   const [data, setData] = useState([]);
   const navigate = useNavigate()
 

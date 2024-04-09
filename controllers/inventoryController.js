@@ -78,8 +78,8 @@ const createInventoryController = async (req, res) => {
     }
 
     //save record
-    // const inventory = new inventoryModel(req.body)
-    // await inventory.save()
+    const inventory = new inventoryModel(req.body)
+    await inventory.save()
     return res.status(201).send({
       success: true,
       message: "New Blood Record Added",
