@@ -1,4 +1,4 @@
-# Blood Bank Management System
+# Blood Bank App
 Blood Bank Management System is a software application designed to manage the workflow of a blood bank, including inventory management, donor management, hospital management, and blood transfusion management. This system helps in maintaining records efficiently and ensures timely availability of blood units as per requirement.
 
 ## Features
@@ -22,7 +22,7 @@ Blood Bank Management System is a software application designed to manage the wo
 
 1. **Clone the repository:**
 
-- ```bash git clone https://github.com/PoojaHasda/Blood-Bank-App.git
+git clone https://github.com/PoojaHasda/Blood-Bank-App.git
 
 2. **Navigate to the project directory**
 cd blood-bank-management-system
